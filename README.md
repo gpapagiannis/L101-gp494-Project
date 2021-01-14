@@ -1,9 +1,9 @@
-### L101: Machine learning for natural language processing
+### L101: Machine learning for language processing
 ### CoNLL 2003 shared task NER: A comparison between a standard and a two stage LSTM framework
 Name: Georgios Papagiannis   
 CRSid: gp494    
    
-This is the code for the results included in the coursework report for the L101 module on Machine learning for natural language processing.
+This is the code for the results included in the coursework report for the L101 module on Machine learning for language processing.
 The objective was to compare a standard LSTM framework and Two-stage LSTM framework for the task of NER. The two-stage LSTM framework use a LSTM that first determines whether
 a word is an entity, by classifying to IOB. Then, this acts as input to a second LSTM that classifies the word to its corresponding Named Entity class.
 
