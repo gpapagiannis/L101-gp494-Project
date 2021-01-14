@@ -516,7 +516,6 @@ def get_bio_model(raw_data_filename):
     
     print("Batch shape:", batched_x.shape)
     print("Device:", device)
-    ####---------------------------------TRAIN---------------------------###
     lstm_net = Net(max_dim, pos_dim,chunks_dim, 2, char_emd_dim, device).to(device) #2 is  for the capitalisation one hot encoding dimension
     return lstm_net
     
