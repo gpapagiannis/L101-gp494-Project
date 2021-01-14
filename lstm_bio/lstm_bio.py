@@ -199,7 +199,7 @@ def loss_fn2(outputs, labels, device):
    #Make extra tokens,i.e., max_idx (from the get_batches method) indices to be zeros.This will later bbe used to ensure they are NOT taken into account when calculating the loss.
    mask = (labels >= 0).float()
    mask = mask.to(device)
-   #the number of tokens is the sum of elements in mask
+
    num_tokens  = int(torch.sum(mask).item()) # just get num of tokens to devide later on.
    exp_log_lik = 0
    print(outputs)
